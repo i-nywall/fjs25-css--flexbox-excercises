@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background-color: #d4d4d4;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.close {
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+    fill: #737373;
+    display: inline;
+}
+
+.profile {
+    /* I use 9999px instead of 50% to ensure
+     * the corners are rounded properly.
+     * on a rectangle with 50% border-radius
+     * the borders would make an oval
+     * this is more useful on the link.
+    */
+    border-radius: 9999px;
+    width: 150px;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    /* I don't know what font is used for this*/
+}
+.job {
+    text-align: center;
+    color: #737373;
+}
+
+.link {
+    background-color: #262626;
+    border-radius: 9999px;
+    color: #fafafa;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem;
+    margin-top: 4rem;
+    text-align: center;
+    text-wrap: nowrap;
+}
