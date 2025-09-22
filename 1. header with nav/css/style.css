@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+}
+.main-nav {
+    flex: 1;
+    max-width: 500px;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.list-item {
+    display: inline-block;
+}
+.list-item a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+/* should show which page you are on
+but since its not in the html and theres
+i do it this way to emulate it.
+*/
+.list-item:first-child a,
+.list-item a:hover {
+    text-decoration: underline;
+    color: #0ea5e9;
+    text-underline-offset: 0.25rem;
+}
