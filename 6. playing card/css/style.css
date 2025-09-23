@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background-color: #d4d4d4;
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    width: 250px;
+    height: 350px;
+    box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+    text-align: center;
+    color: red;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.top,
+.bottom {
+    display: grid;
+    font-size: 1.6rem;
+}
+
+.card aside span {
+    font-size: 1.2rem;
+    color: #a3a3a3;
+}
+
+.top {
+    place-content: start;
+}
+.bottom {
+    place-self: end;
+    transform: rotate(0.5turn);
+}
